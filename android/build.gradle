@@ -165,7 +165,8 @@ dependencies {
 
     // Dependencies for android tests which reside in the "androidTest" src folder.
     androidTestCompile 'com.android.support.test:runner:0.4.1'
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    androidTestCompile "com.android.support:support-annotations:${android_support_lib_version}"
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
 
     // Dependencies for unit tests which reside in the "tests" src folder.
     testCompile 'junit:junit:4.12'
@@ -180,7 +181,7 @@ dependencies {
     compile 'com.google.code.findbugs:jsr305:2.0.1'
 
     // Needed to implement the IdlingResource interface on certain async models.
-    compile 'com.android.support.test.espresso:espresso-idling-resource:2.0'
+    compile 'com.android.support.test.espresso:espresso-idling-resource:2.2.2'
 
     compile 'com.google.guava:guava:18.0'
 }
